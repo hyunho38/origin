@@ -12,7 +12,7 @@ class BaseView(View):
 
 
 class UserCreateView(BaseView):
-    @method-decorator(csrf_exempt)
+    @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):
         return super(UserCreateView, self).dispatch(request, *args, **kwargs):
 
